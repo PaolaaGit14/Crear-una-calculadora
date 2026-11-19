@@ -1,0 +1,123 @@
+/* ESTILOS GENERALES DE LA PÁGINA */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F3E5F5;
+    margin: 0;
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+
+/* CONTENEDOR PRINCIPAL DE LA CALCULADORA */
+
+.calculadora {
+    width: 320px;
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 18px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+/* TÍTULO */
+
+#titulo {
+    text-align: center;
+    color: #6A1B9A;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+/* PANTALLA DE LA CALCULADORA */
+
+#pantalla {
+    width: 100%;
+    min-height: 55px;
+    box-sizing: border-box;
+
+    background-color: #F5F5F5;
+    border: 2px solid #D1B3E0;
+    border-radius: 8px;
+
+    margin-bottom: 18px;
+    padding: 12px;
+
+    font-size: 25px;
+    color: #333333;
+    text-align: right;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* DISTRIBUCIÓN DE LOS BOTONES */
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+/* ESTILOS GENERALES DE LOS BOTONES */
+
+button {
+    padding: 16px 10px;
+    border: 1px solid #D1B3E0;
+    border-radius: 8px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+
+/* BOTONES NUMÉRICOS */
+
+.numero {
+    background-color: #F3E5F5;
+    color: #4A235A;
+}
+
+
+/* BOTONES DE OPERACIONES */
+
+.operador {
+    background-color: #8E44AD;
+    color: #FFFFFF;
+}
+
+
+/* BOTÓN PARA LIMPIAR */
+
+.limpiar {
+    background-color: #F8D7DA;
+    color: #842029;
+}
+
+
+/* BOTÓN DE RESULTADO */
+
+.resultado {
+    background-color: #2E8B57;
+    color: #FFFFFF;
+}
+
+
+/* EFECTO AL PASAR EL CURSOR */
+
+button:hover {
+    filter: brightness(0.92);
+}

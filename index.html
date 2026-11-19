@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora básica</title>
+
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- Contenedor principal de la calculadora -->
+    <div class="calculadora">
+
+        <!-- Título de la calculadora -->
+        <h1 id="titulo">Calculadora básica</h1>
+
+        <!-- Pantalla donde aparecerán los números y resultados -->
+        <div id="pantalla">0</div>
+
+        <!-- Botones de la calculadora -->
+        <div class="botones">
+
+            <!-- Primera fila -->
+            <button class="numero" onclick="agregarNumero('7')">7</button>
+            <button class="numero" onclick="agregarNumero('8')">8</button>
+            <button class="numero" onclick="agregarNumero('9')">9</button>
+            <button class="operador" onclick="seleccionarOperacion('/')">÷</button>
+
+            <!-- Segunda fila -->
+            <button class="numero" onclick="agregarNumero('4')">4</button>
+            <button class="numero" onclick="agregarNumero('5')">5</button>
+            <button class="numero" onclick="agregarNumero('6')">6</button>
+            <button class="operador" onclick="seleccionarOperacion('*')">×</button>
+
+            <!-- Tercera fila -->
+            <button class="numero" onclick="agregarNumero('1')">1</button>
+            <button class="numero" onclick="agregarNumero('2')">2</button>
+            <button class="numero" onclick="agregarNumero('3')">3</button>
+            <button class="operador" onclick="seleccionarOperacion('-')">−</button>
+
+            <!-- Cuarta fila -->
+            <button class="limpiar" onclick="limpiar()">C</button>
+            <button class="numero" onclick="agregarNumero('0')">0</button>
+            <button class="resultado" onclick="calcular()">=</button>
+            <button class="operador" onclick="seleccionarOperacion('+')">+</button>
+
+        </div>
+
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
